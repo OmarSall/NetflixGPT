@@ -1,6 +1,13 @@
 import Header from "./Header";
+import {useState} from "react";
 
 const Login = () => {
+    const [isSignInForm, setIsSignInForm] = useState(true);
+
+    const toggleSignInForm = () => {
+        setIsSignInForm(!isSignInForm);
+    }
+
     return (
         <div className="relative min-h-screen">
             <Header />
@@ -13,7 +20,18 @@ const Login = () => {
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
                 <form className="w-1/4 p-12 bg-black bg-opacity-70 text-white rounded">
-                    <h1 className="font-bold p-4">Sign In</h1>
+                    <h1 className="font-bold py-3 mb-4 text-3xl">
+                        {isSignInForm ? "Sign In" : "Sign Up"}
+                    </h1>
+                    {
+                        !isSignInForm && (
+                            <input
+                                type="text"
+                                placeholder="Full name"
+                                className="w-full p-2 mb-4 rounded bg-gray-700 text-black"
+                            />
+                        )
+                    }
                     <input
                         type="text"
                         placeholder="Email Address"
@@ -26,8 +44,12 @@ const Login = () => {
                     />
                     <button className="w-full p-3 bg-red-600 rounded hover:bg-red-700 transition"
                             type="submit">
-                        Sign In
+                        {isSignInForm ? "Sign In" : "Sign Up"}
                     </button>
+                    <p className="py-4 cursor-pointer"
+                       onClick={toggleSignInForm}>
+                        {isSignInForm ? "New to Netflix? Sign up now" : "Already registered? Sign In now."}
+                    </p>
                 </form>
             </div>
         </div>
