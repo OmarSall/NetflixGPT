@@ -1,9 +1,15 @@
 # Netflix GPT
 
+- Routing of App
 - Create React App
 - Configure TailwindCSS
 - Header
 - Login Form
+- Form Validation
+- useRef hook
+- Firebase Setup
+- Deploying our app to production
+- Create SignUp user account
 
 # Features
 
