@@ -10,7 +10,7 @@ const AuthListener = () => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                const { uid, email, displayName, photoURL } = auth.currentUser;
+                const { uid, email, displayName, photoURL } = user;
 
                 dispatch(
                     addUser({
@@ -24,6 +24,7 @@ const AuthListener = () => {
             }
         });
 
+        // unsubscribes when component unmounts
         return () => unsubscribe();
     }, []);
 

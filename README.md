@@ -15,6 +15,9 @@
 - Implemented SignOut
 - Update profile
 - Fetch from TMDB movies
+- unsubscribe to the onAuthStateChanged callback
+- register TMDB API , create an app and get access token
+- get data from TMDB now playing movies list
 
 # Features
 
