@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import {useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
-import {USER_AVATAR} from "../utils/constants";
+import {BG_URL, USER_AVATAR} from "../utils/constants";
 
 const Login = () => {
     const [isSignInForm, setIsSignInForm] = useState(true);
@@ -82,7 +82,7 @@ const Login = () => {
 
             <div className="absolute inset-0">
                 <img
-                    src="https://assets.nflxext.com/ffe/siteui/vlv3/8cc08720-ac1c-4364-bcbd-9495bf0308cd/web/PL-pl-20260323-TRIFECTA-perspective_120a4779-e880-4bb7-8e1e-10d3b5e1b47a_large.jpg"
+                    src={BG_URL}
                     alt="background"
                     className="w-full h-full object-cover"
                 />
