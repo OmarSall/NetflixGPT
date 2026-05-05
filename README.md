@@ -28,6 +28,9 @@
 - Tailwind Classes to make main container look awesome
 - Build Secondary Component
 - GPT Search Feature
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our App
+- GPT APIs integration,
 
 # Features
 
