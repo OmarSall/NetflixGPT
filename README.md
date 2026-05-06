@@ -31,6 +31,14 @@
 - GPT Search Bar
 - (BONUS) Multi-language Feature in our App
 - GPT APIs integration,
+- Get OpenAi Api key
+- Gpt Search API Call
+- fetched gptMoviesSuggestions from TMDB
+- Memoization
+- create gptSlice
+- adding .env
+- adding .env to gitignore
+- made our site responsive
 
 # Features
 

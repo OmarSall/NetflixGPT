@@ -5,7 +5,7 @@ const MovieCard = ({posterPath}) => {
     return (
         <div className="w-48 flex-shrink-0">
             <img
-                className="w-full rounded-md"
+                className="w-36 md: w-full rounded-md"
                 alt="MovieCard"
                 src={IMG_CDN_URL + posterPath}
             />

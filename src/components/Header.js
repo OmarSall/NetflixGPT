@@ -30,14 +30,14 @@ const Header = () => {
     }
 
     return (
-        <div className="absolute w-screen px-8 py-2 mx-4 my-2 bg-gradient-to-b from-black z-10 flex justify-between">
+        <div className="absolute w-screen px-8 py-2 mx-4 my-2 bg-gradient-to-b from-black z-10 flex flex-col md: flex-row justify-between sm: bg-blue-900 md: bg-green">
             <img
-                className="w-44"
+                className="w-44 mx-auto md: mx-0"
                 src={LOGO}
                 alt="logo"
             />
             {user && (
-                <div className="flex">
+                <div className="flex justify-between md: flex">
                     {showGptSearch && (
                         <select
                             className="p-2 m-2 bg-gray-900 text-white"
@@ -61,7 +61,7 @@ const Header = () => {
                         { showGptSearch ? "Homepage" : "GPT Search"}
                     </button>
                     <img
-                        className="w-20 h-20 p-2 rounded"
+                        className="hidden md: block w-20 h-20 p-2 rounded"
                         src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"
                         alt="user-icon"
                     />

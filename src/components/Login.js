@@ -84,14 +84,14 @@ const Login = () => {
                 <img
                     src={BG_URL}
                     alt="background"
-                    className="w-full h-full object-cover"
+                    className="h-screen object-cover md: w-full h-full object-cover"
                 />
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center">
                 <form
                     onSubmit={(e) => e.preventDefault()}
-                    className="w-1/4 p-12 bg-black bg-opacity-70 text-white rounded"
+                    className="w-full md: w-1/4 p-12 bg-black bg-opacity-70 text-white rounded"
                 >
                     <h1 className="font-bold py-3 mb-4 text-3xl">
                         {isSignInForm ? "Sign In" : "Sign Up"}
